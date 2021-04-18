@@ -136,6 +136,10 @@ document.onkeypress=function(e){
    var n=ans.indexOf(letter);
    ques[n]=letter;
    word.innerHTML=ques;
+   if(letter=="l"){
+     ques[2]="l";
+     word.innerHTML=ques;
+   }
  
 }
 }
@@ -177,6 +181,15 @@ document.onkeypress=function(e){
        var n=ans.indexOf(letter);
        ques[n]=letter;
        word.innerHTML=ques;
+      
+       if(letter=="l"){
+        ques[7]="l";
+        word.innerHTML=ques;
+      }
+      if(letter=="a"){
+        ques[5]="a";
+        word.innerHTML=ques;
+      }
      
   }
 }
@@ -217,6 +230,10 @@ document.onkeypress=function(e){
        var n=ans.indexOf(letter);
        ques[n]=letter;
        word.innerHTML=ques;
+       if(letter=="n"){
+        ques[4]="n";
+        word.innerHTML=ques;
+      }
      
   }
 }
@@ -296,6 +313,10 @@ document.onkeypress=function(e){
        var n=ans.indexOf(letter);
        ques[n]=letter;
        word.innerHTML=ques;
+       if(letter=="l"){
+        ques[4]="l";
+        word.innerHTML=ques;
+      }
      
   }
 }
