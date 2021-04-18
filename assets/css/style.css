@@ -1,0 +1,37 @@
+.container{
+    margin-top: 40px;
+}
+
+
+#column1, #column2{
+    margin: 10px;
+    border: white dotted 5px;
+    padding-top: 50px;
+    height: 730px;
+
+    
+}
+
+#column3{
+    margin-right: 0px;
+    margin-left: 30px;
+}
+
+  
+h1{
+    margin-top: 200px;
+    margin-left:350px ;
+}
+
+
+button{
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.719);
+    border: solid yellow 3px;
+    background-color: yellow;
+    margin: 15px 90px;
+}
+
+p{
+    margin-bottom: 25px;
+}
