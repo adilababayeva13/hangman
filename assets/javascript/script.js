@@ -16,6 +16,7 @@ var btn=document.querySelector("#btn");
 
 //3.column elements
 var hangman=document.querySelector(".hangman");
+var lost=document.querySelector(".lost");
 
 //hangman
 function hangMan(){
@@ -38,9 +39,12 @@ function hangMan(){
         hangman.innerHTML="<img src=./assets/images/6.jpeg>";
     }
     else if(remainCounter ==0){
-     
-        hangman.innerHTML="<img src=./assets/images/7.jpeg>";
+      setTimeout(function(){
         game();
+      }, 3000);
+        hangman.innerHTML="<img src=./assets/images/7.jpeg>";
+        lost.innerHTML="You LOST, Please wait 3 seconds for the new game ...";
+        
 
     }
 }
@@ -52,6 +56,7 @@ function game(){
     hangman.innerHTML="";
     hint.innerHTML="";
     answer.innerHTML="";
+    lost.innerHTML="";
     congratulations.innerHTML="";
 var guessedLetter=[];
 guessed.innerHTML=guessedLetter;
